@@ -38,16 +38,16 @@ public class FindNextNode {
 
 
 /*
-* This is how I would call the methods:
+* To find the next node:
 *
 * Node n = new Node(); 
 * iter = new iteration();
-* String next = iter.next(n)
+* String next = new String(iter.next(n));
 *
-* if next //if true
+* if next //if not null
 *	print next;
 * else //if null
-*	print "Reached End Of Tree";
+*	print "Reached End of Tree";
 *
 */
 
@@ -55,7 +55,8 @@ public class FindNextNode {
 * Future updates: 
 * To prevent lengthly traversal from left to right, perhaps
 * one could randomize where you begin the traversal. For example,
-* starting at the 3rd of 5th child.
+* starting at the 3rd of 5th child. Getting to the last node is 
+* currently inefficient.
 *
 * Refactor the method to handle characters and numbers so that
 * it can be generalized.
@@ -64,4 +65,3 @@ public class FindNextNode {
 * the tree without finding the next node in sequence
 *
 */
-
