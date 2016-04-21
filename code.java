@@ -72,5 +72,8 @@ public class FindNextNode {
 * Alternative Approaches
 * Traverse the tree once and capture all nodes in a hash table
 * Hash table lookup is less expensive. Given a node, do a ASCII 
-* decimal compare to find the next node in the sequence 
+* decimal compare to find the next node in the sequence. However
+* if more nodes get added to the tree, you'd have to rebuild the
+* hash table, defeating the original purpose of why the hash 
+* table was built.
 */
