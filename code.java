@@ -18,18 +18,19 @@
 public class FindNextNode {
 
 	public static void main(String[] args){
-		Node n = new Node(); //We instantiate a new node tree
+
 	}
 
 	public String next(Node n){
-		int lastSeen = Character.toUpperCase(n.name); //convert 
+		int lastSeen = Character.toUpperCase(n.name); //convert to ASCII dec
 
-		for each kid in kids
-			int current = Character.toUpperCase(kid.name); 
-			if (current - lastSeen = 1){
+		for (int i=0, i< n.kids.length; i++ ){
+			int current = Character.toUpperCase(n.kid.name); 
+
+			if (current - lastSeen = 1){ //if the next letter follows previous letter
 				return kid.name; // exit the recursion
 				//break;
-			} else{
+			} else {
 				next(kid);
 			};
 		}
@@ -39,9 +40,9 @@ public class FindNextNode {
 /*
 * This is how I would call the methods:
 *
-* iter = new iteration();//Instantiate a new object
-*
-* if iter.next() //if returns true 
+* Node n = new Node(); 
+* iter = new iteration();
+* if iter.next(n) //if returns a string
 *	print iter.next();
 * else //if edge case of last node
 *	print "Reached End Of Tree";
@@ -51,11 +52,14 @@ public class FindNextNode {
 /*
 * Future updates: 
 * To prevent lengthly traversal from left to right, perhaps
-* one could randomize where you begin the traversal based on 
-* the range of children. 
+* one could randomize where you begin the traversal. For example,
+* starting at the 3rd of 5th child.
 *
 * Refactor the method to handle characters and numbers so that
-* it can be generalized
+* it can be generalized.
+*
+* Graceful exit out of the recursion when you reach the end of
+* the tree without finding the next node in sequence
 *
 */
 
