@@ -41,7 +41,7 @@ public class FindNextNode {
 * To find the next node:
 *
 * Node n = new Node(); 
-* iter = new iteration();
+* FindNextNode iter = new FindNextNode();
 * String next = new String(iter.next(n));
 *
 * if next //if not null
