@@ -42,11 +42,13 @@ public class FindNextNode {
 *
 * Node n = new Node(); 
 * iter = new iteration();
-* if iter.next(n) //if returns a string
-*	print iter.next();
-* else //if edge case of last node
+* String next = iter.next(n)
+*
+* if next //if true
+*	print next;
+* else //if null
 *	print "Reached End Of Tree";
-
+*
 */
 
 /*
