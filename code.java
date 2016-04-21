@@ -67,5 +67,10 @@ public class FindNextNode {
 *
 * Graceful exit out of the recursion when you reach the end of
 * the tree without finding the next node in sequence
+* 
 *
+* Alternative Approaches
+* Traverse the tree once and capture all nodes in a hash table
+* Hash table lookup is less expensive. Given a node, do a ASCII 
+* decimal compare to find the next node in the sequence 
 */
