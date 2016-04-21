@@ -40,10 +40,12 @@ public class FindNextNode {
 /*
 * To find the next node:
 *
-* Node n = new Node(); 
+* Node n = new Node();
 * FindNextNode iter = new FindNextNode();
+* 
+* //Given any node you choose in the tree, find the next node
 * String next = new String(iter.next(n));
-*
+* 
 * if next //if not null
 *	print next;
 * else //if null
