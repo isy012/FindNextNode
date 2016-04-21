@@ -1,6 +1,6 @@
 /* Tree Traversal To Find N+1 Assignment
  *
- * This class finds the next node by traversing the tree.
+ * This class finds the next node by traversing the entire tree on each search.
  * Since we know the node names are characters, we can convert
  * the string into ASCII uppercase integer to compare the values
  * the last seen node and current node. If the next node is found
@@ -55,6 +55,8 @@ public class FindNextNode {
 
 /*
 * Future updates: 
+* Store the current position in the index so you can traverse the tree again
+*
 * To prevent lengthly traversal from left to right, perhaps
 * one could randomize where you begin the traversal. For example,
 * starting at the 3rd of 5th child. Getting to the last node is 
